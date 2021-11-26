@@ -1,5 +1,5 @@
 #!/usr/bin/env pwsh
-#https://github.com/IBeholderI/KerioConnect/blob/main/Backup_emls_older_specific_date.ps1
+#https://github.com/6eh01der/KerioConnect/blob/main/Backup_emls_older_specific_date.ps1
 $Day = Read-Host -Prompt 'Specify number of the day in a month, for example 17'
 $Month = Read-Host -Prompt 'Specify number of the month in a year, for example 3'
 $Year = Read-Host -Prompt 'Specify year, for example 2020'
