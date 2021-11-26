@@ -1,5 +1,5 @@
 #!/usr/bin/env pwsh
-#https://github.com/IBeholderI/KerioConnect/blob/main/Restore_emls_for_specific_users.ps1
+#https://github.com/6eh01der/KerioConnect/blob/main/Restore_emls_for_specific_users.ps1
 $USERS = Read-Host -Prompt 'Specify users splitted by spaces, like "user1 user2" without quotes'
 $LIST = ("$USERS").split(' ')
 For ($i=0; $i -lt $LIST.Count; $i++) {
