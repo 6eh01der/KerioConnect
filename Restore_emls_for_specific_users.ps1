@@ -6,6 +6,7 @@ $PATH = $args[0]
 $DOMAIN = $args[1]
 $BACKUP_SERVER = $args[2]
 $BACKUP_LOCATION = $args[3]
+$BACKUP_USER = $args[4]
 For ($i=0; $i -lt $LIST.Count; $i++) {
-    Invoke-Command { rsync -hrtzuvs --password-file=YOUR_PASSWORD_FILE --progress "rsync@$BACKUP_SERVER`:$BACKUP_LOCATION/$($LIST[$i])/" "$PATH/$DOMAIN/$($LIST[$i])" }
+    Invoke-Command { rsync -hrtzuvs --password-file=YOUR_PASSWORD_FILE --progress "$BACKUP_USER@$BACKUP_SERVER`:$BACKUP_LOCATION/$($LIST[$i])/" "$PATH/$DOMAIN/$($LIST[$i])" }
 }
