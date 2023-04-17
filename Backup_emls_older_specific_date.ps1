@@ -22,5 +22,5 @@ $EML_LIST = For ($i=0; $i -lt $EML_LIST.Count; $i++) {
     $($EML_LIST.FullName[$i]).replace("$PATH/", '')
 }
 For ($i=0; $i -lt $EML_LIST.Count; $i++) {
-    Invoke-Command { rsync -hrRtluvpogs --password-file=YOUR_PASSWORD_FILE --progress "$PATH/./$($EML_LIST[$i])" "$BACKUP_USER@$BACKUP_SERVER`:$BACKUP_LOCATION/"
+    Invoke-Command { rsync -hrRtluvpogs --password-file=YOUR_PASSWORD_FILE --progress "$PATH/./$($EML_LIST[$i])" "$BACKUP_USER@$BACKUP_SERVER`:$BACKUP_LOCATION/" }
 }
