@@ -5,4 +5,4 @@ Powershell scripts for Kerio Connect Linux server:
 3) Restore .eml files for specific users
 
 Note that the powershell is required:
-https://docs.microsoft.com/ru-ru/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7.1
+https://learn.microsoft.com/ru-ru/powershell/scripting/install/installing-powershell-on-linux
